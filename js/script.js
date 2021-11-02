@@ -1,9 +1,9 @@
 // 주메뉴 슬라이드 
 $(".menu>ul>li").hover(
     function(){
-        $(this).children("ul").slideDown("slow");
+        $(this).children("ul").stop().slideDown("slow");
     },function(){
-        $(this).children("ul").slideUp("fast");
+        $(this).children("ul").stop().slideUp("fast");
     }
 );
 
